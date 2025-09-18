@@ -8,12 +8,12 @@
   (with-temp-file custom-file
     (insert ";; Custom file for Emacs customizations\n")))
 (load custom-file)
+(defvar my-config-dir (file-name-directory (or load-file-name buffer-file-name)))
 
-
-(add-to-list 'load-path "~/.emacs.d/emacs-config/startup")
-(add-to-list 'load-path "~/.emacs.d/emacs-config/visual")
-(add-to-list 'load-path "~/.emacs.d/emacs-config/packages")
-(add-to-list 'load-path "~/.emacs.d/emacs-config/utilities")
+(add-to-list 'load-path (expand-file-name "startup" my-config-dir))
+(add-to-list 'load-path (expand-file-name "visual" my-config-dir))
+(add-to-list 'load-path (expand-file-name "packages" my-config-dir))
+(add-to-list 'load-path (expand-file-name "utilities" my-config-dir))
 
 (require 'package)
 
