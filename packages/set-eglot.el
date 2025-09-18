@@ -12,8 +12,9 @@
     :hook
     (php-mode . eglot-ensure)
     :config
-    (progn
-      (add-to-list 'eglot-server-programs '(php-mode . ("intelephense" "--stdio"))))))
+    (add-to-list 'eglot-server-programs '(php-mode . ("intelephense" "--stdio")))
+    (add-to-list 'company-backends 'company-capf)
+    ))
 
 
 (provide 'set-eglot)

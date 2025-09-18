@@ -12,7 +12,7 @@
   (use-package alect-themes
     :ensure t
     :config
-    (load-theme 'alect-dark t)))
+    (load-theme 'alect-light t)))
 
 
 (provide 'set-theme)

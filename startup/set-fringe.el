@@ -7,7 +7,7 @@
 
 (defun config/set-fringe ()
   "Define a fringe."
-  (add-hook 'after-init-hook (lambda () (fringe-mode 16))))
+  (add-hook 'after-init-hook (lambda () (fringe-mode 12))))
 
 
 (provide 'set-fringe)

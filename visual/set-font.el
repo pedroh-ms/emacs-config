@@ -13,8 +13,8 @@
   "Função que configura a fonte."
   (progn
     (set-face-attribute 'default nil
-			:family "Fira Code"
-			:height 110)))
+			:family "Fira Code Retina"
+			:height 100)))
 
 
 (provide 'set-font)
