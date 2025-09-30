@@ -66,6 +66,8 @@
 (require 'set-web-mode)
 (require 'set-fringe)
 (require 'set-company)
+(require 'set-magit)
+(require 'set-nix-mode)
 
 (config-remove-welcome)
 (config-set-encoding)
@@ -101,6 +103,9 @@
 (config/set-indent-bars)
 ;(config/set-web-mode)
 (config/set-fringe)
+
+(config/magit)
+(config/nix-mode)
 
 (provide 'main)
 ;;; main.el ends here
