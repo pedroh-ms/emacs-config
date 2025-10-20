@@ -10,7 +10,15 @@
   (use-package slime
     :ensure t
     :config
-    (setq inferior-lisp-program "sbcl")))
+    (setq inferior-lisp-program "sbcl")
+    
+    (add-hook 'slime-mode-hook
+	      (lambda ()
+		(company-quickhelp-local-mode -1)))
+
+    (add-hook 'slime-repl-mode-hook
+	      (lambda ()
+		(company-quickhelp-local-mode -1)))))
 
 
 (provide 'set-slime)

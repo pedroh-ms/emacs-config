@@ -68,6 +68,7 @@
 (require 'set-company)
 (require 'set-magit)
 (require 'set-nix-mode)
+(require 'set-treesitter)
 
 (config-remove-welcome)
 (config-set-encoding)
@@ -77,7 +78,7 @@
 (config/line-highlight)
 (config/font)
 (config/ligature)
-(config/theme)
+(config/theme-modus-operandi-tinted)
 
 (config/set-try)
 (config/set-which-key)
@@ -103,9 +104,12 @@
 (config/set-indent-bars)
 ;(config/set-web-mode)
 (config/set-fringe)
+(config/treesitter)
 
 (config/magit)
 (config/nix-mode)
 
 (provide 'main)
+
 ;;; main.el ends here
+
