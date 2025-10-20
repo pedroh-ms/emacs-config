@@ -5,14 +5,37 @@
 
 ;;; Code:
 
-
-;; Tema
-(defun config/theme ()
-  "Função que define o tema."
-  (use-package alect-themes
+(defmacro config/theme-macro (package theme)
+  "Macro que declara o tema THEME dentro de PACKAGE."
+  `(use-package ,package
     :ensure t
     :config
-    (load-theme 'alect-light t)))
+    (load-theme ,theme t)))
+
+;; Temas
+(defun config/theme-tron-legacy ()
+  "Função que define o tema tron legacy."
+  (config/theme-macro tron-legacy-theme 'tron-legacy))
+
+(defun config/theme-alect-dark ()
+  "Função que define o tema alect dark."
+  (config/theme-macro alect-themes 'alect-dark))
+
+(defun config/theme-alect-light ()
+  "Função que define o tema alect light."
+  (config/theme-macro alect-themes 'alect-light))
+
+(defun config/theme-modus-operandi ()
+  "Função que define o tema modus operandi."
+  (config/theme-macro modus-themes 'modus-operandi))
+
+(defun config/theme-modus-operandi-tinted ()
+  "Função que define o tema modus operandi tinted."
+  (config/theme-macro modus-themes 'modus-operandi-tinted))
+
+(defun config/theme-modus-vivendi ()
+  "Função que define o tema modus vivendi."
+  (config/theme-macro modus-themes 'modus-vivendi))
 
 
 (provide 'set-theme)

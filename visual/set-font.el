@@ -14,7 +14,8 @@
   (progn
     (set-face-attribute 'default nil
 			:family "Fira Code"
-			:height 100)))
+			:height 110
+			:weight 'normal)))
 
 
 (provide 'set-font)

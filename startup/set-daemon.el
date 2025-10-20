@@ -16,9 +16,9 @@
       (lambda (frame)
         (with-selected-frame frame
 	  (progn
-	    (config/theme)))))
+	    )))))
   (progn
-    (config/theme))))
+    ))
 
 (provide 'set-daemon)
 

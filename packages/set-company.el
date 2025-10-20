@@ -23,10 +23,14 @@
 
 (defun config/set-company-quickhelp()
   "Configura o company-quickhelp para informações sobre a definição."
+  (use-package pos-tip
+    :ensure t)
+
   (use-package company-quickhelp
     :ensure t
     :config
     (company-quickhelp-mode)
+    (setq company-quickhelp-use-propertized-text t)
     (setq company-quickhelp-delay 0.5)))
 
 
