@@ -78,7 +78,7 @@
 (config/line-highlight)
 (config/font)
 (config/ligature)
-(config/theme-alect-dark)
+(config/theme-standard-light-tinted)
 
 (config/set-try)
 (config/set-which-key)
