@@ -1,4 +1,4 @@
 * Emacs Config
 
-Just my emacs config 😉. The best editor 😎.
+Just my emacs config [[https://github.githubassets.com/images/icons/emoji/unicode/1f609.png]]. The best editor [[https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png]].
 
