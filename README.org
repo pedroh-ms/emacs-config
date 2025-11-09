@@ -1,3 +1,3 @@
 * Emacs Config
 
-Just my emacs config 😉. The best editor 😎.
+Just my emacs config :wink:. The best editor :sunglasses:.
