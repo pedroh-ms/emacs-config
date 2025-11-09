@@ -37,6 +37,25 @@
   "Função que define o tema modus vivendi."
   (config/theme-macro modus-themes 'modus-vivendi))
 
+(defun config/theme-standard-light ()
+  "Função que define o tema standard light."
+  (config/theme-macro standard-themes 'standard-light))
+
+(defun config/theme-standard-light-tinted ()
+  "Função que define o tema standard light tinted."
+  (config/theme-macro standard-themes 'standard-light-tinted))
+
+(defun config/theme-standard-dark ()
+  "Função que define o tema standard dark."
+  (config/theme-macro standard-themes 'standard-dark))
+
+(defun config/theme-standard-dark-tinted ()
+  "Função que define o tema standard dark tinted."
+  (config/theme-macro standard-themes 'standard-dark-tinted))
+
+(defun config/theme-rebecca ()
+  "Função que define o tema rebecca."
+  (config/theme-macro rebecca-theme 'rebecca))
 
 (provide 'set-theme)
 

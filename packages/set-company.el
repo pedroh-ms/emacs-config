@@ -19,7 +19,8 @@
     (setq company-tooltip-align-annotations t)
     (setq company-tooltip-minimum 1)
     (global-auto-complete-mode -1)
-    (config/set-company-quickhelp)))
+    (config/set-company-quickhelp)
+    (add-hook 'slime-repl-mode-hook (lambda () (company-mode -1)))))
 
 (defun config/set-company-quickhelp()
   "Configura o company-quickhelp para informações sobre a definição."
