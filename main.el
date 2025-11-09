@@ -78,7 +78,7 @@
 (config/line-highlight)
 (config/font)
 (config/ligature)
-(config/theme-modus-operandi-tinted)
+(config/theme-alect-dark)
 
 (config/set-try)
 (config/set-which-key)
@@ -108,6 +108,7 @@
 
 (config/magit)
 (config/nix-mode)
+
 
 (provide 'main)
 
