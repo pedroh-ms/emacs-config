@@ -1,3 +1,3 @@
 * Emacs Config
 
-Just my emacs config &#x1F609;. The best editor &#x1F60E;.
+Just my emacs config \u{1F609}. The best editor \u{1F60E}.
