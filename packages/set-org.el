@@ -8,12 +8,10 @@
 (defun config/org ()
   "Configura o org."
   (use-package org
-    :ensure
     :config
-    (progn
-      (setq org-startup-indented t)
-      (add-hook 'org-mode-hook (lambda () (hl-line-mode)))
-      (eval-after-load "org" '(require 'ox-md nil t)))))
+    (setq org-startup-indented t)
+    (add-hook 'org-mode-hook (lambda () (hl-line-mode)))
+    (eval-after-load "org" '(require 'ox-md nil t))))
 
 (provide 'set-org)
 

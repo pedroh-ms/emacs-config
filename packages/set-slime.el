@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(require 'company-quickhelp)
 
 (defun config/set-slime ()
   "Configura o slime."

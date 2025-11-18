@@ -11,7 +11,6 @@
     :ensure t
     :mode "\\.nix\\'"
     :config
-    (setq nix-indent-level 2)
     (add-hook 'nix-mode-hook
 	      (lambda ()
 		(add-hook 'before-save-hook 'nixfmt nil 'local))))
