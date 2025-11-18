@@ -5,8 +5,6 @@
 
 ;;; Code:
 
-(require 'eglot)
-
 (defun config/set-php-ts-mode ()
   "Configura o php-mode."
   (use-package php-ts-mode
@@ -35,8 +33,6 @@
     :ensure t
     :mode ("\\.php\\'" . php-mode)
     :config
-    (add-to-list 'eglot-server-programs
-		 '(php-mode . ("intelephense" "--stdio")))
     (add-hook 'php-mode-hook #'eglot-ensure)
     (add-hook 'php-mode-hook
 	      (lambda () (set-window-buffer nil (current-buffer))))))

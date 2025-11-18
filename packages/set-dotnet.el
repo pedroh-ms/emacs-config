@@ -14,10 +14,7 @@
     :ensure t
     :after eglot
     :config
-    (add-hook 'csharp-mode-hook #'eglot-ensure)
-    (add-to-list
-     'eglot-server-programs
-     '(csharp-mode . ("csharp-ls"))))
+    (add-hook 'csharp-mode-hook #'eglot-ensure))
 
   (use-package csproj-mode
     :ensure t))
