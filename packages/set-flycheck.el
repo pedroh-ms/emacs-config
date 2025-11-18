@@ -11,9 +11,10 @@
   ;; Checagem de sintaxe
   (use-package flycheck
     :ensure t
-    :init (progn
-	    (global-flycheck-mode t)
-	    (setq-default flycheck-emacs-lisp-load-path 'inherit))))
+    :init
+    (declare-function global-flycheck-mode "flycheck")
+    (global-flycheck-mode t)
+    (setq-default flycheck-emacs-lisp-load-path 'inherit)))
 
 
 (provide 'set-flycheck)

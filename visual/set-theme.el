@@ -15,11 +15,14 @@
 	    (mapcar
 	     (lambda (theme)
 	       (let ((theme-name (symbol-name theme)))
-		 `(defun ,(intern (concat "config/theme-" theme-name)) ()
+		 `(defun ,(intern (concat "config/theme-" theme-name)) (&rest args)
 		    ,(format "Função que define o tema %s." (replace-regexp-in-string "-" " " theme-name))
 		    (use-package ,package
 		      :ensure t
 		      :config
+		      (let ((config (plist-get args :config)))
+			(when (functionp config)
+			  (funcall config)))
 		      (load-theme ',theme t)))))
 	     themes)))
 	packages-and-themes)))

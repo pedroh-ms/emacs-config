@@ -9,6 +9,8 @@
   "Configura o slime."
   (use-package slime
     :ensure t
+    :init
+    (declare-function company-quickhelp-local-mode "company-quickhelp")
     :config
     (setq inferior-lisp-program "sbcl")
     

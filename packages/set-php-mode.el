@@ -33,12 +33,9 @@
     :ensure t
     :mode ("\\.php\\'" . php-mode)
     :config
-    (progn
-      (add-hook 'php-mode-hook
-		(lambda ()
-		  ;(setq left-fringe-width 16)
-		  ;(setq right-fringe-width 16)
-		  (set-window-buffer nil (current-buffer)))))))
+    (add-hook 'php-mode-hook #'eglot-ensure)
+    (add-hook 'php-mode-hook
+	      (lambda () (set-window-buffer nil (current-buffer))))))
 
 (provide 'set-php-mode)
 

@@ -13,7 +13,7 @@
   "Função que configura a fonte."
   (progn
     (set-face-attribute 'default nil
-			:family "Fira Code"
+			:family "Iosevka Extended"
 			:height 110
 			:weight 'normal)))
 

@@ -10,6 +10,7 @@
     :ensure t
     :bind ("C-x g" . magit-status)
     :config
+    (declare-function magit-display-buffer-same-window-except-diff-v1 "magit")
     (setq magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1)))
 
 (provide 'set-magit)
