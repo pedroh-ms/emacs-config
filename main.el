@@ -71,6 +71,8 @@
 (require 'set-treesitter)
 (require 'set-treemacs)
 (require 'set-dotnet)
+(require 'set-docker)
+(require 'set-java)
 (require 'project)
 
 (config-remove-welcome)
@@ -114,6 +116,8 @@
 (config/set-fringe)
 (config/treesitter)
 (config/set-dotnet)
+(config/set-docker)
+(config/set-java)
 
 (config/magit)
 (config/nix-mode)

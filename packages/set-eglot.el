@@ -10,7 +10,9 @@
     :ensure t
     :config
     (add-to-list 'eglot-server-programs '(php-mode . ("intelephense" "--stdio")))
-    (add-to-list 'eglot-server-programs '(csharp-mode . ("csharp-ls")))))
+    (add-to-list 'eglot-server-programs '(csharp-mode . ("csharp-ls")))
+    (add-to-list 'eglot-server-programs '(java-mode . ("jdtls")))
+    (add-hook 'java-mode #'eglot-ensure)))
 
 (provide 'set-eglot)
 
