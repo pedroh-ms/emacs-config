@@ -20,7 +20,6 @@
 	  company-tooltip-align-annotations t
 	  company-tooltip-minimum 1)
     (add-to-list 'company-backends 'company-capf)
-    (global-auto-complete-mode -1)
     (config/set-company-quickhelp)
     (add-hook 'slime-repl-mode-hook (lambda () (company-mode -1)))))
 

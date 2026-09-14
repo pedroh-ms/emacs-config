@@ -3,6 +3,7 @@
 ;;; Commentary:
 ;;; Code:
 
+
 (setq custom-file "~/.emacs.d/custom.el")
 (unless (file-exists-p custom-file)
   (with-temp-file custom-file
@@ -33,6 +34,7 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
+(package-refresh-contents)
 
 (require 'remove-welcome)
 (require 'encoding)
@@ -74,6 +76,8 @@
 (require 'set-docker)
 (require 'set-java)
 (require 'project)
+(require 'set-treesit-auto)
+(require 'set-restclient)
 
 (config-remove-welcome)
 (config-set-encoding)
@@ -118,6 +122,9 @@
 (config/set-dotnet)
 (config/set-docker)
 (config/set-java)
+(config/treesit-auto)
+(config/restclient)
+(config/set-go)
 
 (config/magit)
 (config/nix-mode)
